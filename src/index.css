@@ -3,18 +3,26 @@ body {
   padding: 0;
   font-family: 'Karla', sans-serif;
   background-color: #F5F7FB;
-  height: 100vh;
 }
 
-.intro-page {
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 1.5em;
+  height: 100vh;
 }
 
-.start {
+.intro-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F5F7FB;
+}
+
+button {
   background: #4D5B9E;
   color: #F5F7FB;
   border-radius: 15px;
@@ -24,7 +32,6 @@ body {
   font-size: 24px;
   font-family: karla;
   transition: transform .2s;
-
 }
 
 .start:hover {
@@ -34,11 +41,28 @@ body {
 .blob1 {
   position: absolute;
   right: 0;
+  top: 0;
 }
 
 .blob2 {
   position: absolute;
   left: 0;
   bottom: 0;
+}
+
+.quiz-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F7FB;
+}
+
+.check {
+  height: 50px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
