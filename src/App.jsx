@@ -1,11 +1,10 @@
 import './App.css'
+import IntroPage from './Components/IntroPage'
 
 function App() {
  
   return (
-    <div className="App">
-     
-    </div>
+   <IntroPage />
   )
 }
 
