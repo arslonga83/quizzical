@@ -13,7 +13,7 @@ export default function QuizPage() {
         <Question />
         <Question />
         <Question />
-        <button className='check'>Check answers</button>
+        <button className='check' onClick={() => console.log('you rock')}>Check answers</button>
         </div>
       <img src={blob4} className='blob2'></img>
     </main>
