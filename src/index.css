@@ -23,7 +23,7 @@ main {
   margin-top: 25vh
 }
 
-.click, .start {
+.click, .start, .check {
   background: #4D5B9E;
   color: #F5F7FB;
   border-radius: 15px;
@@ -31,7 +31,7 @@ main {
   margin-top: 16px;
   width: 200px;
   font-size: 24px;
-  font-family: karla;
+  font-family: 'Karla', sans-serif;
   transition: transform .2s;
 }
 
@@ -57,6 +57,7 @@ main {
     align-items: center;
     justify-content: center;
     background-color: #F5F7FB;
+    margin-top: 16px;
 }
 
 .check {
@@ -69,4 +70,28 @@ main {
 
 h4 {
   margin: 8px;
+}
+
+.choices {
+  display: flex;
+  gap: 16px;
+}
+
+.choice {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #293264;
+  background-color: #F5F7FB;
+  border: 1px solid #4D5B9E;
+  width: 125px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.selected {
+  color: #293264;
+  background-color: #D6DBF5;
+  border: none;
 }
