@@ -7,12 +7,21 @@ function App() {
 
   const [playGame, setPlayGame] = React.useState(false)
 
-  function startQuiz() {
-    setPlayGame(true)
-  }
+  const [trivia, setTrivia] = React.useState([])
+
+  React.useEffect(() => {
+    console.log('effect ran')
+   fetch('https://opentdb.com/api.php?amount=5&category=16&type=multiple')
+     .then((response) => response.json())
+     .then((data) => setTrivia(data.results))
+ }, [])
+
+ function startQuiz() {
+  setPlayGame(true)
+}
 
 return (
-  playGame ? <QuizPage /> : <IntroPage startQuiz={startQuiz}/>
+  playGame ? <QuizPage trivia={trivia}/> : <IntroPage startQuiz={startQuiz}/>
 )
 
 
