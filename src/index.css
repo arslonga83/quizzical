@@ -68,12 +68,15 @@ main {
   justify-content: center;
 }
 
-h4 {
+p {
   margin: 8px;
+  text-align: center;
+  font-size: 1.25rem;
 }
 
 .choices {
   display: flex;
+  justify-content: center;
   gap: 16px;
 }
 

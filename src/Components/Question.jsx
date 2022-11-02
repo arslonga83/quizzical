@@ -1,15 +1,27 @@
+import data from '../data'
+
 export default function Question(props) {
+
+ 
+    let choices = []
+    choices.push(props.data.correct_answer)
+    choices.push(props.data.incorrect_answers[0])
+    choices.push(props.data.incorrect_answers[1])
+    choices.push(props.data.incorrect_answers[2])
+    console.log(choices)
+  
   return (
     <div className='question'>
-      <h4>What is the best band in the world?</h4>
+      <p>{props.data.question}</p>
       <div className='choices'>
-        <button className='choice selected' onClick={props.handleClick}>BTS</button>
-        <button className='choice' onClick={props.handleClick}>Green Day</button>
-        <button className='choice' onClick={props.handleClick}>The Beatles</button>
-        <button className='choice' onClick={props.handleClick}>Metallica</button>
+        <button className='choice' onClick={props.handleClick}>{choices[0]}</button>
+        <button className='choice' onClick={props.handleClick}>{choices[1]}</button>
+        <button className='choice' onClick={props.handleClick}>The {choices[2]}</button>
+        <button className='choice' onClick={props.handleClick}>{choices[3]}</button>
       </div>
       <hr></hr>
     </div>
-    
+
+   
   )
 }
