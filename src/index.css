@@ -35,7 +35,7 @@ main {
   transition: transform .2s;
 }
 
-.click:hover, .start:hover {
+.click:hover, .start:hover, .check:hover {
   transform: scale(1.1)
 }
 
@@ -68,7 +68,7 @@ main {
   justify-content: center;
 }
 
-p {
+.question {
   margin: 8px;
   text-align: center;
   font-size: 1.25rem;
@@ -87,10 +87,13 @@ p {
   color: #293264;
   background-color: #F5F7FB;
   border: 1px solid #4D5B9E;
-  width: 125px;
+  width: 130px;
   height: 50px;
   border-radius: 8px;
   padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .selected {

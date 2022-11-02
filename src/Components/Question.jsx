@@ -5,14 +5,15 @@ export default function Question(props) {
  
     let choices = []
     choices.push(props.data.correct_answer)
-    choices.push(props.data.incorrect_answers[0])
-    choices.push(props.data.incorrect_answers[1])
-    choices.push(props.data.incorrect_answers[2])
-    console.log(choices)
-  
+    props.data.incorrect_answers.forEach(answer => {
+      choices.push(answer)
+    })
+
+
+
   return (
     <div className='question'>
-      <p>{props.data.question}</p>
+      <p className='question'>{props.data.question}</p>
       <div className='choices'>
         <button className='choice' onClick={props.handleClick}>{choices[0]}</button>
         <button className='choice' onClick={props.handleClick}>{choices[1]}</button>
