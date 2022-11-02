@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-family: 'Karla', sans-serif;
   background-color: #F5F7FB;
+  height: 100vh;
 }
 
 main {
@@ -11,7 +12,6 @@ main {
   align-items: center;
   justify-content: center;
   font-size: 1.5em;
-  height: 100vh;
 }
 
 .intro-content {
@@ -20,9 +20,10 @@ main {
   align-items: center;
   justify-content: center;
   background-color: #F5F7FB;
+  margin-top: 25vh
 }
 
-button {
+.click, .start {
   background: #4D5B9E;
   color: #F5F7FB;
   border-radius: 15px;
@@ -34,7 +35,7 @@ button {
   transition: transform .2s;
 }
 
-.start:hover {
+.click:hover, .start:hover {
   transform: scale(1.1)
 }
 

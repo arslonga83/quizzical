@@ -1,5 +1,15 @@
 export default function Question() {
   return (
-    <h4>Test question</h4>
+    <div className='question'>
+      <h4>Test question</h4>
+      <div>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+      </div>
+      <hr></hr>
+    </div>
+    
   )
 }
